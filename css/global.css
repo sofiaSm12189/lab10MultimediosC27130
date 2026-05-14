@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e5e5e5;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  padding: 40px;
+
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* ======================
+   POSTER CAMPAIGN
+====================== */
+
+poster-campaign {
+  width: 650px;
+
+  --poster-background: #c89400;
+  --poster-title-color: white;
+  --poster-slogan-color: white;
+  --poster-action-color: white;
+  --poster-radius: 30px;
+  --poster-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  --poster-image-height: 420px;
+}
+
+/* customización visual */
+
+poster-campaign::part(poster) {
+  border-radius: 30px;
+}
+
+poster-campaign::part(title) {
+  text-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+poster-campaign::part(message) {
+  backdrop-filter: blur(6px);
+}
+
+/* ======================
+   DIRECTORY
+====================== */
+
+direction-poster {
+  width: 700px;
+
+  --directory-background: #0d3f84;
+  --directory-item-color: white;
+  --directory-divider-color: rgba(255, 255, 255, 0.15);
+
+  --directory-footer-background: linear-gradient(to bottom, #e6e6e6, #d4d4d4);
+
+  --directory-footer-color: #0d3f84;
+
+  --directory-radius: 30px;
+
+  --directory-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* ======================
+   LOCATION CARD
+====================== */
+
+location-card {
+  --card-background: rgba(255, 255, 255, 0.05);
+
+  --card-background-featured: rgba(255, 255, 255, 0.12);
+
+  --card-hover-background: rgba(255, 255, 255, 0.15);
+
+  --card-text-color: white;
+
+  --card-arrow-color: white;
+
+  --card-padding: 30px;
+}
+
+/* responsive */
+
+@media (max-width: 1400px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  poster-campaign,
+  direction-poster {
+    width: 90%;
+  }
+}
