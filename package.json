@@ -1,0 +1,17 @@
+{
+  "name": "lab10MultimediosC27130",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpx servor src index.html 1234 --reload",
+    "deploy": "gh-pages -d src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
