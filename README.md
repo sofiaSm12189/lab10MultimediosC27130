@@ -1,20 +1,10 @@
-# Laboratorio 2 — Web Components UCR
+# Laboratorio 10 — Web Components UCR
 
 ## Descripción
 
 Este proyecto implementa afiches institucionales de la Universidad de Costa Rica utilizando **Web Components modernos**.
 
 El objetivo del laboratorio es demostrar el uso de componentes reutilizables y encapsulados mediante tecnologías nativas del navegador.
-
-### Tecnologías aplicadas
-
-- ✅ Custom Elements
-- ✅ Shadow DOM
-- ✅ Slots
-- ✅ CSS Variables
-- ✅ CSS Parts
-- ✅ ES Modules
-- ✅ Componentización y reutilización
 
 ---
 
@@ -454,8 +444,3 @@ pnpm run deploy
 ```
 
 ---
-
-## Autor
-
-**Universidad de Costa Rica**  
-**Laboratorio — Web Components**
